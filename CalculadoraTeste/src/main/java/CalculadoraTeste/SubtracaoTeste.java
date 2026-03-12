@@ -68,4 +68,11 @@ public class SubtracaoTeste {
     public void deveSubtrairNumeroNegativo3() {
         assertEquals(90.0, calc.subtrair(10.0, -80.0), 0.001);
     }
+
+    // Questão 8) Crie um teste para verificar se a operação funciona corretamente: 10 - 3 = 7.
+    @Test
+    public void testSubtracaoSimples() {
+        double resultado = calc.subtrair(10.0, 3.0);
+        assertEquals(7.0, resultado);
+    }
 }

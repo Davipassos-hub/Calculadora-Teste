@@ -73,4 +73,11 @@ public class AdicaoTeste {
     public void deveSomarDoisNumerosNegativos3() {
         assertEquals(-190.0, calc.somar(-70.0, -120.0), 0.001, "-70 + (-120) deve ser -15");
     }
+
+    // Questão 7) Escreva um teste para verificar se a calculadora resolve: 4 + 6 = 10.
+    @Test
+    public void testSomaSimples() {
+        double resultado = calc.somar(4.0, 6.0);
+        assertEquals(10.0, resultado);
+    }
 }

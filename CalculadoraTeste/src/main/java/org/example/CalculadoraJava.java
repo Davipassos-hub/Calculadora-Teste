@@ -15,7 +15,7 @@ public class CalculadoraJava extends JFrame implements ActionListener {
         return a + b;
     }
 
-    public double subtrair(double a, double b) {
+    public static double subtrair(double a, double b) {
         return a - b;
     }
 
@@ -64,7 +64,7 @@ public class CalculadoraJava extends JFrame implements ActionListener {
 
         for (String texto : botoes) {
             JButton botao = new JButton(texto);
-            botao.setFont(new Font("Arial", Font.PLAIN, 18));
+            botao.setFont(new Font("Arial", Font.PLAIN, 35));
             botao.addActionListener(this);
             painelBotoes.add(botao);
         }

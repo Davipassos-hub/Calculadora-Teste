@@ -64,11 +64,16 @@ public class MultiplicacaoTeste {
 
     @Test
     public void deveMultiplicarNumeroPositivoPorNegativo2() {
-        assertEquals(-90.0, calc.multiplicar(18.0, -5.0), 0.001);
-    }
+        assertEquals(-90.0, calc.multiplicar(18.0, -5.0), 0.001);}
 
     @Test
     public void deveMultiplicarNumeroPositivoPorNegativo3() {
         assertEquals(-32.0, calc.multiplicar(8.0, -4.0), 0.001);
     }
+
+    // Questão 9) Escreva um teste para validar a multiplicação: 7 * 8 = 56.
+    @Test
+    public void testMultiplicacaoSimples() {
+        double resultado = calc.multiplicar(7.0, 8.0);
+        assertEquals(56.0, resultado);}
 }

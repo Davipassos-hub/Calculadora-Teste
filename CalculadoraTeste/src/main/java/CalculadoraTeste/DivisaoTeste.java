@@ -54,6 +54,11 @@ public class DivisaoTeste {
         assertEquals(7.5, calc.dividir(15.0, 2.0), 0.001);
     }
 
+    // Questão 10) Crie um teste para verificar a divisão: 20 / 5 = 4.0.
+    @Test
+    public void testDivisaoSimples() {double resultado = calc.dividir(20.0, 5.0);assertEquals(4.0, resultado);}
+
+    // Questão 12) Crie um teste para verificar o comportamento da divisão por zero (10 / 0).
     @Test
     public void deveLancarErroAoDividirPorZero() {
         assertThrows(ArithmeticException.class, () -> {
